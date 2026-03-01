@@ -1,1 +1,33 @@
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Overthinking Machine: a minimal dark interactive reflection built with vanilla HTML, CSS, and JS."
+    />
+    <title>Overthinking Machine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="machine" aria-live="polite">
+      <h1 id="prompt" class="prompt">WHY ARE YOU HERE?</h1>
+
+      <label for="thought" class="sr-only">Write a thought and press Enter</label>
+      <input
+        id="thought"
+        class="thought"
+        type="text"
+        maxlength="280"
+        autocomplete="off"
+        placeholder="Type, then press Enter"
+      />
+
+      <p id="response" class="response" role="status"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
